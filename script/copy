@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+xsel -p -o | xsel -b -i

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+xsel -bo | xsel -i
+xdotool click 2

@@ -15,4 +15,6 @@ defaults = ewmh defaultConfig {
         startupHook        = setDefaultCursor xC_left_ptr
     } `additionalKeys`
     [ ((mod4Mask, xK_p), spawn "dmenu_launch")
+    , ((mod1Mask .|. shiftMask, xK_c), spawn "copy")
+    , ((mod1Mask .|. shiftMask, xK_v), spawn "paste")
     ]
