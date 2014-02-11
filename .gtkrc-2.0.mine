@@ -1,0 +1,22 @@
+#style "panel-background" {
+#  bg_pixmap[NORMAL]        = "foo.bar"
+#  bg_pixmap[PRELIGHT]      = "foo.bar"
+#  bg_pixmap[ACTIVE]        = "foo.bar"
+#  bg_pixmap[SELECTED]      = "foo.bar"
+#  bg_pixmap[INSENSITIVE]   = "foo.bar"
+#}
+style "panel-color" {
+  fg[NORMAL]               = "#839496"
+  fg[ACTIVE]               = "#839496"
+  bg[NORMAL]               = "#002B36"
+  bg[PRELIGHT]             = "#002B36"
+  bg[ACTIVE]               = "#002B36"
+}
+#widget_class "*Panel*" style "panel-background"
+widget "*PanelWidget*" style "panel-color"
+widget "*PanelApplet*" style "panel-color"
+widget "*Panel*" style "panel-color"
+widget_class "*Panel*" style "panel-color"
+class "*Panel*" style "panel-color"
+class "*Tray*" style "panel-color"
+class "*tray*" style "panel-color"
