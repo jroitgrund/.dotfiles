@@ -7,7 +7,7 @@ import XMonad.Util.EZConfig
 main = xmonad defaults
 
 defaults = ewmh defaultConfig {
-        terminal           = "rxvt",
+        terminal           = "xterm",
         borderWidth        = 0,
         modMask            = mod4Mask,
         layoutHook         = avoidStruts $ layoutHook defaultConfig,
