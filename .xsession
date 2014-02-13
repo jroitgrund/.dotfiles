@@ -1,6 +1,7 @@
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/notification-daemon/notification-daemon &
-/usr/bin/gnome-keyring-daemon
+/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh 
+export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
 xfce4-panel &
 nm-applet &
 xrdb .Xresources
