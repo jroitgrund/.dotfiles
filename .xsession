@@ -6,5 +6,10 @@ nm-applet &
 xrdb .Xresources
 synclient PalmDetect=1
 synclient HorizTwoFingerScroll=1
+synclient TapButton2=3
+synclient TapButton3=2
+mouseid=$(xinput list | grep Razer | awk '{printf $6}' | sed 's/[^0-9]*//g' | rev | cut -c 1- | rev)
+xinput set-button-map $mouseid 3 2 1 4 5 6 7 8 9 10 11
+autocutsel -selection PRIMARY -fork
 keepassx -min &
 exec xmonad

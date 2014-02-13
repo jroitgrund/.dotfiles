@@ -61,3 +61,4 @@ xterm*color13:                 S_violet
 xterm*color14:                 S_base1
 xterm*color15:                 S_base3
 xterm*faceName: DejaVu Sans Mono for Powerline:pixelsize=14
+xterm*loginShell: true

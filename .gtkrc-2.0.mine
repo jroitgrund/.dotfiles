@@ -6,11 +6,14 @@
 #  bg_pixmap[INSENSITIVE]   = "foo.bar"
 #}
 style "panel-color" {
-  fg[NORMAL]               = "#839496"
-  fg[ACTIVE]               = "#839496"
+  fg[ACTIVE]               = shade(100, "#839496")
+  fg[NORMAL]               = shade(100, "#839496")
+  fg[PRELIGHT]             = shade(100, "#002B36")
+  fg[SELECTED]             = shade(100, "#002B36")
+  bg[ACTIVE]               = "#002B36"
   bg[NORMAL]               = "#002B36"
   bg[PRELIGHT]             = "#002B36"
-  bg[ACTIVE]               = "#002B36"
+  bg[SELECTED]             = "#002B36"
 }
 #widget_class "*Panel*" style "panel-background"
 widget "*PanelWidget*" style "panel-color"

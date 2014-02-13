@@ -46,10 +46,12 @@ DEFAULT_USER="jonathan"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git bower gem npm pip )
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/home/jonathan/bin:/home/jonathan/bin:/usr/local/bin:/usr/bin:/bin:/usr/games"
+export PATH="$HOME/bin:$HOME/local/bin:$PATH"
 
 export EDITOR='vim'
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
