@@ -8,5 +8,6 @@ myManageHook = composeAll
 
 main = xmonad mateConfig {
     terminal = "urxvt"
+  , modMask = mod4Mask
   , manageHook = myManageHook <+> manageHook mateConfig
 }
