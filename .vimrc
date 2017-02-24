@@ -8,7 +8,6 @@ set background=dark
 colorscheme solarized
 nmap j gj
 nmap k gk
-nmap \e :NERDTreeToggle<CR>
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'solarized'
