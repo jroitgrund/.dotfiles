@@ -1,13 +1,15 @@
 import XMonad
 import XMonad.Config.Mate
-import qualified Data.Map as M
+import XMonad.Util.EZConfig
 
 myManageHook = composeAll
   [ className =? "Do" --> doIgnore
   ]
 
-main = xmonad mateConfig {
+myModMask = mod4Mask
+
+main = xmonad $ mateConfig {
     terminal = "urxvt"
-  , modMask = mod4Mask
+  , modMask = myModMask
   , manageHook = myManageHook <+> manageHook mateConfig
-}
+} `removeKeys` [(myModMask, xK_p)]
