@@ -1,5 +1,6 @@
 import XMonad
 import XMonad.Config.Mate
+import XMonad.Layout.NoBorders
 import XMonad.Util.EZConfig
 
 myManageHook = composeAll
@@ -11,5 +12,6 @@ myModMask = mod4Mask
 main = xmonad $ mateConfig {
     terminal = "urxvt"
   , modMask = myModMask
+  , layoutHook = smartBorders $ layoutHook mateConfig
   , manageHook = myManageHook <+> manageHook mateConfig
 } `removeKeys` [(myModMask, xK_p)]
