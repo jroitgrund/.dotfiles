@@ -1,0 +1,7 @@
+server:
+  adminConnectors:
+    - type: https
+      port: 8443
+      keyStorePath: ../server.keystore
+      keyStorePassword: changeit
+      keyStoreType: JKS
