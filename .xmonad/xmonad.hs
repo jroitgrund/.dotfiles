@@ -1,5 +1,6 @@
 import XMonad
 import XMonad.Config.Mate
+import XMonad.Hooks.SetWMName
 import XMonad.Layout.NoBorders
 import XMonad.Util.EZConfig
 
@@ -14,4 +15,5 @@ main = xmonad $ mateConfig {
   , modMask = myModMask
   , layoutHook = smartBorders $ layoutHook mateConfig
   , manageHook = myManageHook <+> manageHook mateConfig
+  , startupHook = setWMName "LG3D"
 } `removeKeys` [(myModMask, xK_p)]
